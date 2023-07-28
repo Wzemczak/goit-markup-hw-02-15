@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -23,27 +26,35 @@ a {
   font-size: 18px;
 
   font-weight: 800;
-  line-height: 1, 16;
+  line-height: 1.16;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 .logo-span {
   color: var(--iris);
 }
-.navigation {
+.navigation a {
   font-size: 16px;
-
+  color: var(--navyblue);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.header-contact {
+.navigation a:hover,
+.navigation a:focus {
+  color: var(--ocean);
+}
+.header-contact a {
   color: var(--slate);
 
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.header-contact a:hover,
+.header-contact a:focus {
+  color: var(--ocean);
 }
 .slogan-background {
   background: var(--navyblue);
@@ -73,6 +84,10 @@ a {
   gap: 10px;
   cursor: pointer;
 }
+.index-button:hover,
+.index-button:focus {
+  background: var(--ocean);
+}
 .portfolio-button {
   display: flex;
   padding: 12px 24px;
@@ -93,20 +108,9 @@ a {
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
-  display: flex;
-  padding: 12px 24px;
-  align-items: flex-start;
-  border-radius: 4px;
   background: var(--ocean);
 
   color: var(--white);
-  text-align: center;
-
-  font-size: 16px;
-
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
 }
 .header-three {
   font-size: 20px;
@@ -144,4 +148,14 @@ a {
 
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+.logo-footer {
+  color: var(--cloud);
+  font-family: Raleway;
+  font-size: 18px;
+
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
